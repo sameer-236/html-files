@@ -1,0 +1,96 @@
+/**{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+.container{
+    background-color: rgb(77, 71, 71);
+    width:100vw;
+    height:100vh;
+    display:grid;
+   padding:20px;
+   row-gap:2rem;
+ /*  grid-template-columns: 100px 100px;
+   grid-template-rows:100px 100px 100px;
+   column-gap: 2rem;
+
+   grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr ;    /*fractional unit */
+        /*1fr=3000px;
+  
+}
+.item{
+    background-color: blueviolet;
+    border:4px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  
+}
+#head1{
+    color: azure;
+}
+
+
+@media (min-width:780px){
+    .container{
+        grid-template-rows:1fr 1fr 1fr 1fr;    /*fractional unit 
+        grid-template-columns:1fr 1fr 1fr; 
+    }
+    .header{
+        grid-column-start:1;
+         grid-column-end:4;
+     
+     }
+     .footer{
+         grid-column-start:1;
+         grid-column-end:4;
+     }
+     .sidebar{
+         grid-row-start:2;
+         grid-row-end:4;
+     }
+     .content{
+         grid-column-start:2;
+         grid-column-end:4;
+     }
+
+}*/
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+.container{
+    background-color: rgb(179, 134, 134);
+    width:100vw;
+    height:100vh;
+    display:grid;
+    row-gap:2rem;
+    column-gap: 2rem;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    padding:20px;
+    justify-items: stretch;     /*it is used in container for items*/        
+
+}
+.item{
+    background-color: rgb(81, 81, 155);
+    border:2px solid black;
+   /* width: 100px;
+    height: 50px;*/
+    /*justify-self: end;*/    /*justify self is use for change the position of grid items one way*/
+    /*justify-self:center;*/
+    /*justify-self:first baseline;*/
+    /*justify-content:last baseline;*/
+    /*justify-self:stretch;*/
+
+
+   /* align-self:end;*/          /*align self is used for change position vertically*/
+   /*align-self:first baseline;*/
+   /*align-self: center;*/
+   /*align-self:stretch;*/
+
+   /*place-self: center; */   /*place self is used for position by both row and column*/
+   /*place-self:end;*/
+}   

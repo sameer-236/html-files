@@ -1,0 +1,140 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: rgb(83, 56, 109);
+            width:100vw;
+            height:100vh;
+            display: grid;
+           /*grid-template-columns:repeat(auto-fit, minmax(250px,400px));*/
+            padding:20px;
+            gap:1.2rem;
+
+            grid-template-areas: 
+            "Header Header Header"
+            "Sidebar Content1 Content1"
+            "Sidebar Content2 Content3"
+            "Footer Footer Footer";
+            
+
+        }
+        .item{
+            border:3px solid rgb(31, 29, 29);
+            /*width:25vw;*/
+            /*height:5vh;*/
+           
+            color:azure;
+
+        }
+
+        #header{
+            grid-area:Header;
+        }
+        #sidebar{
+            grid-area:Sidebar;
+
+        }
+        #content1{
+            grid-area:Content1;
+        }
+        #content2{
+            grid-area:Content2;
+        }
+        #content3{
+            grid-area: Content3;
+        }
+        #footer{
+            grid-area:Footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="header">Header</div>
+        <div class="item" id="sidebar">Sidebar</div>
+        <div class="item" id="content1">Content1</div>
+        <div class="item" id="content2">Content2</div>
+        <div class="item" id="content3">Content3</div>
+        <div class="item" id="footer">Footer</div>
+      
+        
+    </div>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: rgb(233, 15, 15);
+            padding:30px;
+            width:100vw;
+            height:100vh;
+            gap:1rem;
+            display: grid;
+            grid-template-areas:
+            "header header header "
+            "Nav Maincontent Sidebar"
+            "Nav Maincontent Sidebar"
+            "Footer Footer Footer";
+
+        }
+        #hgl{
+            grid-area: header;
+
+        }
+        #nav{
+            grid-area:Nav;
+        }
+        #mc{
+            grid-area:Maincontent;
+        }
+        #sidebar{
+            grid-area: Sidebar;
+        }
+        #footer{
+            grid-area:Footer;
+        }
+        .item{
+            background-color: rgba(131, 206, 19, 0.726);
+            border:3px solid black;
+            /*height:40px;
+            width: 25vw;*/
+            color:white;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="hgl">header</div>
+        <div class="item" id="nav">Nav</div>
+        <div class="item" id="mc">Maincontent</div>
+        <div class="item" id="sidebar">Sidebar</div>
+        <div class="item" id="footer">Footer</div>
+    </div>
+    
+</body>
+</html>

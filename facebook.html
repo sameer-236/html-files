@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+        .container{
+            background-color: whitesmoke;
+            width:100vw;
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+            gap:9px;
+        
+        }
+        .fb{
+            margin-left: 69px;
+        }
+        #fb-img{
+            width:150px;
+            height:110px;
+          
+        }
+        #face-para{
+            font-weight:520;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 1.3rem;
+            
+            
+        }
+        .content-container{
+            background-color: white;
+            width:400px;
+            height:330px;
+            display:flex;
+            flex-direction: column;
+            gap:0.7rem;
+            box-shadow:dimgrey 5px 5px 5px 10px;
+            margin-right:50px;
+            border-radius: 4px;
+           
+            
+        }
+        #input-type{
+            margin:10px;
+            border-radius: 4px;
+           
+            border:0.25px solid rgb(216, 209, 209);
+            padding:8px;
+            
+          
+
+        }
+        #input-type2{
+          
+            margin-left:10px;
+            margin-right:10px;
+            padding:8px;
+            border:0.25px solid rgb(216, 209, 209);
+            border-radius: 4px;
+        }
+        #log-button{
+            background-color: rgb(42, 42, 155);
+            color: azure;
+            padding:8px;
+            margin: 10px;
+            border-radius: 4px;
+        }
+        #pass-para{
+            text-align: center;
+            color:rgb(71, 71, 163);
+            border-bottom:0.25px solid rgb(216, 209, 209);
+            padding:8px;
+            margin-left: 10px;
+            margin-right: 10px;
+           /* margin: 10px;*/
+
+        }
+        .new{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #new-account{
+            background-color: rgb(7, 136, 7);
+            margin-top: 14px;
+            padding-top:20px;
+            padding-bottom:20px;
+            padding-left: 25px;
+            padding-right:25px;
+            color:azure;
+            font-weight: 700;
+            border-radius: 4px;
+            
+        }
+        #face-head{
+            color: rgb(86, 86, 189);
+            font-weight: 900;
+        }
+        #head{
+            color: rgba(3, 49, 199, 0.986);
+            font-size:2.9rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="fb">
+           
+           <!--<img src="https://www.pixartprinting.it/blog/wp-content/uploads/2023/05/6_Logo-facebook-2019-1024x446.jpg" id="fb-img"/>-->
+           <h1 id="head">facebook</h1>
+           <br>
+        
+            <p id="face-para">Facebook helps you connect and share with<br>
+                 the people in your life.
+            </p>
+        </div>
+        <div class="content-container">
+            <input type="text" id="input-type" placeholder="Email address or Phone number">
+            <input type="text" id="input-type2" placeholder="Password">
+            <button id="log-button">Log In</button>
+            <p id="pass-para">Forgotten Password?</p>
+            <div class="new">
+                <button id="new-account">Create New Account</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

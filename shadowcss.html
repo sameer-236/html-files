@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color:yellow;
+            width:1200px;
+            height:600px;
+            border:5px solid black;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            
+        }
+        .box{
+            
+            background-color: aqua;
+            width:500px;
+            height:400px;
+            border:3px solid orange;
+            padding:4px;
+           /* box-shadow: 10px 10px blue,-10px -10px blue;*/
+           /*box-shadow: 20px 30px red;*/
+          /* box-shadow:-20px 10px blue;*/
+          /*box-shadow:30px 30px 20px red;*/    /*here is 20px is blur radius*/
+         /* box-shadow:-30px 40px 40px 50px skyblue;*/    /*here is  40px is blur radius and  50px is spreadradius*/
+           /*box-shadow:20px 20px red,10px 10px blue,30px 20px green;*/
+
+           /*box-shadow: inset 20px 20px red;*/     /*by  inset we can insert shadow inside box*/
+           /*box-shadow:inset 20px 20px blue;*/
+
+        }
+        #img{
+            width:250px;
+            height: 200px;
+        }
+
+        #head{
+            /*text  shadow::>*/
+            /*text-shadow:5px 2px red; */
+            /*text-shadow:4px 3px 4px blue;*/   /*here 4px is blur radius*/
+            /*text-shadow:green 3px 4px 2px;*/
+            /*text-shadow:3px 4px;*/    /*here is no color added so by default color is implemented*/
+            /* text-shadow: 5px 5px blue,10px 10px red,12px 10px brown;*/     /*multiple color os added*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="image.png" id="img"/>
+            <h1 id="head">Hello Welcome</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ducimus architecto ipsam est officia, earum optio minima deleniti cum soluta accus
+                antium, consequuntur fugit ea aspernatur ad voluptate animi ut voluptate
+                 voluptatum voluptates non temporibus? Veritatis molestiae omnis praesentium rem. Quisquam?</p>
+        </div>
+    </div>
+    
+</body>
+</html>
