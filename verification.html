@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Verification Page</title>
+    <link rel="stylesheet" href="verification.css">
+    <body>
+
+    <div id="container">
+        <h1>Welcome to student verification page</h1>
+
+        <div class="page">
+            <input type="text" id="input1" class="input" placeholder="Enter your name">
+            <br>
+            <br>
+
+            <input type="text" id="input2" class="input" placeholder="Enter your Roll no">
+            <br>
+            <br>
+
+            <input type="text" id="input3" class="input" placeholder="Enter your College Name">
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <button id="but" onclick=" printDetails()">Submit</button>
+        </div>
+
+
+    </div>
+
+    <script>
+       
+    let student = [{
+        name: "Arshi",
+        rollno: 123,
+        clg: "Vaish College of Engineering"
+    }];
+    
+    /*let button = document.getElementById("but");
+    button.addEventListener("click", function submitted() {
+        alert("Your details have been submitted successfully");
+    });*/
+
+    function printDetails() {
+        let name = document.getElementById("input1").value;
+        let roll = document.getElementById("input2").value;
+        let clg = document.getElementById("input3").value;
+        
+        console.log("Name: " + name);
+        console.log("Roll no: " + roll);
+        console.log("College Name: " + clg);
+
+        // Find student based on college name only
+        const studentDetails = student.find(s => s.clg === clg);
+
+        if (studentDetails) {
+            console.log("Student Found:", studentDetails);
+            alert("College name verified! Redirecting to Chatbot...");
+            
+            // Redirect to chatbot page
+            window.location.href = "chatbot.html"; // Replace with your actual chatbot page URL
+        } else {
+            alert("!!!please provide right college name.");
+        }
+    }      
+    </script>
+</head>
+    
+</body>
+</html>
